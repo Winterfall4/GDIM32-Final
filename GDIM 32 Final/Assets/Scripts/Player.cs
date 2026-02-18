@@ -39,6 +39,19 @@ public class Player : MonoBehaviour
         Vector3 move = (transform.forward * vertical + transform.right * horizontal) * _moveSpeed;
         _playerRigidbody.velocity = new Vector3(move.x, _playerRigidbody.velocity.y, move.z);
         
-        _animator.SetBool("Walk", true);
+        //bool isMoving = vertical != 0 || horizontal != 0;     
+        //_animator.SetBool("Walk", true);
+
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            Debug.Log("Get Key Down");
+            _animator.SetBool("Walk", true);
+        }
+
+        if (Input.GetKeyUp(KeyCode.W))
+        {
+            Debug.Log("Get Key Up");
+            _animator.SetBool("Walk", false);
+        }
     }
 }

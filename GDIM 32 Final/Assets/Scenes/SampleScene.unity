@@ -410,6 +410,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1694388104864216425, guid: 678bf8bc91771fa498236de892b83d1d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694388104864216425, guid: 678bf8bc91771fa498236de892b83d1d, type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: e5a7e0550c9cad24b8ab087837389d69, type: 2}
@@ -502,10 +506,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.252805
-  m_Height: 1.5433327
+  m_Radius: 0.16508865
+  m_Height: 1.6326895
   m_Direction: 1
-  m_Center: {x: -0, y: 0.6085121, z: -0.247195}
+  m_Center: {x: -0.015745908, y: 0.7799783, z: -0.027796745}
 --- !u!54 &798013359
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -531,7 +535,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &798013360
 MonoBehaviour:
