@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float _moveSpeed;
     [SerializeField] private float _mouseSensitivity;
 
+
     private Transform _cameraTrans;
     private float _rotationX;
     private float _rotationY;
@@ -37,6 +38,7 @@ public class Player : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
         Vector3 move = (transform.forward * vertical + transform.right * horizontal) * _moveSpeed;
         _playerRigidbody.velocity = new Vector3(move.x, _playerRigidbody.velocity.y, move.z);
-
+        
+        _animator.SetBool("Walk", true);
     }
 }
