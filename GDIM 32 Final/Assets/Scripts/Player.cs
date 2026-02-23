@@ -44,13 +44,13 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.W))
         {
-            Debug.Log("Get Key Down");
+           
             _animator.SetBool("Walk", true);
         }
 
         if (Input.GetKeyUp(KeyCode.W))
         {
-            Debug.Log("Get Key Up");
+           
             _animator.SetBool("Walk", false);
         }
     }
