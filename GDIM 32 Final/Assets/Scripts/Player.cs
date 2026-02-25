@@ -35,12 +35,9 @@ public class Player : MonoBehaviour
         transform.localEulerAngles = new Vector3(0, _rotationX, 0);
 
         float vertical = Input.GetAxis("Vertical");
-        float horizontal = Input.GetAxis("Horizontal");
-        Vector3 move = (transform.forward * vertical + transform.right * horizontal) * _moveSpeed;
+        Vector3 move = (transform.forward * vertical) * _moveSpeed;
         _playerRigidbody.velocity = new Vector3(move.x, _playerRigidbody.velocity.y, move.z);
         
-        //bool isMoving = vertical != 0 || horizontal != 0;     
-        //_animator.SetBool("Walk", true);
 
         if (Input.GetKeyDown(KeyCode.W))
         {
