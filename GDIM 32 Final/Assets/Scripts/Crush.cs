@@ -30,7 +30,7 @@ public class Crush : MonoBehaviour
         {
             playerInRange = true;
     
-            Debug.Log("Press E to interact");
+           
            interacttext.SetActive(true);
         }
     }
@@ -48,13 +48,13 @@ public class Crush : MonoBehaviour
             }
 
             
-            Debug.Log("Player left crush range");
+           
         }
     }
 
     void Interact()
     {
         OnPlayerClick.Invoke();
-        Debug.Log("Interacted with Crush");
+       
     }
 }
