@@ -26,6 +26,21 @@ public class Crush : MonoBehaviour
            
         }
     }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            playerInRange = false;
+
+            // Disable the Crush UI when player walks away
+            if (Locator.Instance != null)
+            {
+                Locator.Instance.CrushUI.SetActive(false);
+            }
+
+            Debug.Log("Player left crush range");
+        }
+    }
 
     void Interact()
     {
