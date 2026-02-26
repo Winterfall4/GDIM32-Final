@@ -2,21 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Crush : NPC
+public class Crush : MonoBehaviour
 {
-
     private bool playerInRange = false;
     public delegate void PlayerInteract();
     public static event PlayerInteract OnPlayerClick;
     public GameObject interacttext;
-    [SerializeField] private GameObject _ui;
 
     private void Start()
     {
-
-        interacttext.SetActive(false);
+        
+        interacttext.SetActive(false);  
     }
-    /*
     void Update()
     {
         // If player is in range and presses 'E'
@@ -59,32 +56,5 @@ public class Crush : NPC
     {
         OnPlayerClick.Invoke();
        
-    }
-    */
-
-    private void Update()
-    {
-        CheckDistance();
-        CrushCheck();
-    }
-
-    private void CrushCheck()
-    {
-        switch (_currentState)
-        {
-            case NPCState.isIdle:
-                playerInRange = false;
-                Locator.Instance.CrushUI.SetActive(false);
-                interacttext.SetActive(false);
-                break;
-            case NPCState.isTalking:
-                playerInRange = true;
-                interacttext.SetActive(true);
-                if (Input.GetKeyDown(KeyCode.E))
-                {
-                    _ui.SetActive(true);
-                }
-                break;
-        }
     }
 }
