@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a8dbeea38388f48bb1fa797de2af97, type: 3}
   m_Name: Teddy
   m_EditorClassIdentifier: 
-  itemName: Teddy Bear
+  itemName: Teddy
   description: Gift second Option
   icon: {fileID: 21300000, guid: bf68361af0e07874f8addb43b815c471, type: 3}

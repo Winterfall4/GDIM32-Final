@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a8dbeea38388f48bb1fa797de2af97, type: 3}
   m_Name: PurpleFlower
   m_EditorClassIdentifier: 
-  itemName: Purple Flower
+  itemName: Flower
   description: Purple flower for bouquet
   icon: {fileID: 21300000, guid: c74a4f17907f9104496c39ad6e76a878, type: 3}

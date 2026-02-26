@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a8dbeea38388f48bb1fa797de2af97, type: 3}
   m_Name: RedFower
   m_EditorClassIdentifier: 
-  itemName: Red Flower
+  itemName: Flower
   description: Red flower for bouquet
   icon: {fileID: 21300000, guid: e8a7b25202ff44e48aaa167b0696d589, type: 3}

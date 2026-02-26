@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a8dbeea38388f48bb1fa797de2af97, type: 3}
   m_Name: BlueFlower
   m_EditorClassIdentifier: 
-  itemName: Blue Flower
+  itemName: Flower
   description: Blue flower for bouquet
   icon: {fileID: 21300000, guid: f524057e99740f940a76d43a117ab42f, type: 3}
