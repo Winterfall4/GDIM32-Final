@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     [SerializeField] private Animator _animator;
     [SerializeField] private float _moveSpeed;
     [SerializeField] private float _mouseSensitivity;
-
+    [SerializeField] private GameObject _ui;
 
     private Transform _cameraTrans;
     private float _rotationX;
@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.Locked;
         _cameraTrans = Camera.main.transform;
     }
 
@@ -34,15 +34,20 @@ public class Player : MonoBehaviour
         _cameraTrans.localEulerAngles = new Vector3(-_rotationY, 0, 0);
         transform.localEulerAngles = new Vector3(0, _rotationX, 0);
 
-        float vertical = Input.GetAxis("Vertical");
-        Vector3 move = (transform.forward * vertical) * _moveSpeed;
-        _playerRigidbody.velocity = new Vector3(move.x, _playerRigidbody.velocity.y, move.z);
+        if (_ui.activeSelf == false)
+        {
+            float vertical = Input.GetAxis("Vertical");
+            Vector3 move = (transform.forward * vertical) * _moveSpeed;
+            _playerRigidbody.velocity = new Vector3(move.x, _playerRigidbody.velocity.y, move.z);
+        }
         
 
         if (Input.GetKeyDown(KeyCode.W))
         {
-           
-            _animator.SetBool("Walk", true);
+            if (_ui.activeSelf == false)
+            {
+                _animator.SetBool("Walk", true);
+            }
         }
 
         if (Input.GetKeyUp(KeyCode.W))
