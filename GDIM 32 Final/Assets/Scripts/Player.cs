@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float _moveSpeed;
     [SerializeField] private float _mouseSensitivity;
     [SerializeField] private GameObject _ui;
-
+    public GameObject cursorui;
     private Transform _cameraTrans;
     private float _rotationX;
     private float _rotationY;
@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
         _cameraTrans = Camera.main.transform;
+        cursorui.SetActive(true);
     }
 
     // Update is called once per frame

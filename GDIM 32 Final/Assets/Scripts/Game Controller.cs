@@ -8,6 +8,7 @@ public class Locator : MonoBehaviour
     public static Locator Instance { get; private set; }
     public Player Player { get; private set; }
     public GameObject CrushUI;
+    public GameObject cursorui;
 
     private void Awake()
     {
@@ -25,6 +26,7 @@ public class Locator : MonoBehaviour
     {
 
         CrushUI.SetActive(false);
+        cursorui.SetActive(true);
     }
 
     void OnEnable()
@@ -33,5 +35,5 @@ public class Locator : MonoBehaviour
     }
     public void CrushScene()
     { CrushUI.SetActive(true);
-        }
+        cursorui.SetActive(false); }
 }
