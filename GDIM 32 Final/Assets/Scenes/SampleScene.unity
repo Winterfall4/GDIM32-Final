@@ -5887,7 +5887,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _currentState: 0
-  _talkingDistance: 0
+  _talkingDistance: 2
   _distance: 0
   _player: {fileID: 798013357}
   interacttext: {fileID: 467109452}
