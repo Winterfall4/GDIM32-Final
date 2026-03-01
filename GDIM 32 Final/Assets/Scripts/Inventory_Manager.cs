@@ -15,6 +15,9 @@ public class InventoryManager : MonoBehaviour
 
     public Transform ItemContent;
     public GameObject InventoryItem;
+    public int max = 5; 
+    public GameObject InventaryMessage;
+
 
     //private void Start()
     //{
@@ -35,12 +38,19 @@ public class InventoryManager : MonoBehaviour
     }
 
 
-    public void Add(Item item)
+    public bool Add(Item item)
     {
+        if (Items.Count >= max)
+        {
+            InventaryMessage.SetActive(true);
+            return false;
+        }
         //PickUp items are here
         Items.Add(item);
         //This calls the list to update UI 
         ListItem();
+        InventaryMessage.SetActive(false);
+        return true;
     }
 
     //Removes a item from list(this is for the remove option)(I work on this later)
