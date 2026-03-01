@@ -56,5 +56,34 @@ public class Player : MonoBehaviour
            
             _animator.SetBool("Walk", false);
         }
+
+        //Player can remove item with Q
+        if(Input.GetKeyDown(KeyCode.Q))
+        {
+            InventoryManager.Instance.DropItem(transform);
+        }
+        
+        //Method to be able to click on the item instead of using mousedown( mousedown was causing problems)
+        // from unity documentation GetMouseButtonDown
+        // https://docs.unity3d.com/6000.3/Documentation/ScriptReference/Input.GetMouseButtonDown.html
+        if (Input.GetMouseButtonDown(0))
+        {
+
+            Ray ray = new Ray(_cameraTrans.position, _cameraTrans.forward);
+            // get information back from the raycast.
+            RaycastHit hit;
+
+            // From raycast unity documentation
+            // https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Physics.Raycast.html
+            if (Physics.Raycast(ray, out hit, 5f))
+            {
+                ItemPickUp pickup = hit.collider.GetComponent<ItemPickUp>();
+
+                if (pickup != null)
+                {
+                    pickup.Pickup();
+                }
+            }
+        }
     }
 }

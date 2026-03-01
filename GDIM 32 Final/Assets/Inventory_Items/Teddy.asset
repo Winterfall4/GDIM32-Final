@@ -15,3 +15,4 @@ MonoBehaviour:
   itemName: Teddy
   description: Gift second Option
   icon: {fileID: 21300000, guid: bf68361af0e07874f8addb43b815c471, type: 3}
+  prefab: {fileID: 7864949313543132107, guid: 07cd12ab294a9f143b4db894da343085, type: 3}

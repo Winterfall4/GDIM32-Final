@@ -37,8 +37,6 @@ public class InventoryManager : MonoBehaviour
 
     public void Add(Item item)
     {
-        //Debug.Log("Se llamó Add()");
-
         //PickUp items are here
         Items.Add(item);
         //This calls the list to update UI 
@@ -72,14 +70,30 @@ public class InventoryManager : MonoBehaviour
             var itemName = obj.transform.Find("ItemName").GetComponent<TMP_Text>();
             var itemIcon = obj.transform.Find("Item_Icon").GetComponent<Image>();
 
-            //Debug.Log(obj.transform.Find("ItemName"));
-            //Debug.Log(obj.transform.Find("Item_Icon"));
-
             //This makes the image and name visible on the screen.
             itemName.text = item.itemName;
             itemIcon.sprite = item.icon;
 
         }
+    }
+    
+    //metod of drop
+    public void DropItem(Transform playerTransform)
+    {
+        if (Items.Count <= 0)
+            return;
+        //This drops the last item of the list 
+        Item itemDrop = Items[Items.Count - 1];
+
+        //This Spawns the item in front of player
+        Vector3 spawnPosition = playerTransform.position + playerTransform.forward * 2f;
+        Instantiate(itemDrop.prefab, spawnPosition, Quaternion.identity);
+
+        //remove item of inventory 
+        Items.Remove(itemDrop);
+        
+        //tells UI
+        ListItem();
     }
 }
 
