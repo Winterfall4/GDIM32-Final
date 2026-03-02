@@ -76,7 +76,7 @@ Put your individual final Devlog here.
     - Anime Girl2: https://assetstore.unity.com/packages/3d/characters/aika-highschool-uniform-221860
     - Flowers: https://assetstore.unity.com/packages/3d/vegetation/flowers/demo-low-poly-flower-pack-325074
     - Grass: https://assetstore.unity.com/packages/3d/vegetation/plants/flowers-grass-plants-neon3d-239575
-    - Trees: https://assetstore.unity.com/packages/3d/vegetation/trees low-poly-trees-pack-lite-free-stylized-nature-environment-assets-295464
+    - Trees: https://assetstore.unity.com/packages/3d/vegetation/trees/low-poly-trees-pack-lite-free-stylized-nature-environment-assets-295464 
     - Terrain texture: https://assetstore.unity.com/packages/2d/textures-materials/nature/terrain-textures-free-271990
     - Park: https://assetstore.unity.com/packages/3d/environments/urban/low-poly-park-pack-created-with-fastmesh-asset-292938
     - Pavilion: https://assetstore.unity.com/packages/3d/props/exterior/pavilion-85680
