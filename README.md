@@ -7,10 +7,17 @@ While we were working on our project, we made the mistake of working on the game
 ### Team Member Gianine Ariane Umai
 Some of the things that I did for this project so far was that I imported the some of the assets that we used in the game, fix any rendering issues that some of the assets were having, adjusted the camera and player movement. I also made the crush be able to detect how close the player is to him using an NPC parent class and NPCState enums, and when they are close enough to him, a prompt should show above his head telling the player to press "E" to interact with him. And once player's press "E", the dialogue box should show up. I adjusted the player movements controls where if the dialogue box is showing, the player is unable to move. I also working on the lighting effects where there is a pink spot light on the ground around the crush to show that this is a person that the player may talk to. I added point lights to the lamp posts to help add to the environment.
 
-### Team Member Name 2
-Put your individual check-in Devlog here.
+### Team Member Kai Castilliano
 
-### Team Member Alejandra Perez Name 3
+
+Over the last few weeks, our team has gone through a lot of trial and error and has had a lot of different coding implemented in our game, which has only advanced it into what it is currently. The first thing I did within the creation of the game was create the script folder for the classes such as the Player, Game Controller, Crush, and NPC scripts. Within the player's class, I implemented the 3d movement in its Update() method. Originally, in the early development, the player was able to walk with the WASD keys using GetAxis (“Vertical”) and GetAxis(Horizontal). After out first playtest we found some errors with the movement more particularly the sensitivity of the mouse, the camera placement, and how choppy it looked animation wise (there was only an animation for the player walking forward and not the side) we ultimately decided to tweak the movement code and have it to where the player was only able to move forward and back- reducing some of the bugs. Other than this, in the player's start method on my device i pushed the cursor's lock state code and created a camera member variable that can be assigned which is a camera object that is a child of the parent, this way it created the 3rd person point of view look to the game rather than first person. The cursorlockstate. Keeps the mouse in the center of the game to prevent drift or weird camera angles and in the player's Start() method I added a UI that activates at the start of the game as a visual guide to show the player where they are pointing, which is useful for when they need to pick up objects!
+
+Apart from this, I had also made the crush character interactable via code within the Crush class. The crush’s gameobject has a collider with Is Triggered enabled. And using this collider logic, the crush originally used an OnTriggerEnter and OnTriggerExit method to which the Crush would detect if their collider collided with the player's collider (if input. get tag = “Player”) then it would call up a UI text that tells the player that they can interact with the crush. I had also created an event within the Crush class OnPlayerClick() which is also referenced within the Game controller class in our code and in this event it makes it so that when the player interacts with the crush the event would trigger which would lead to the Crush’s dialogue activating and then when the player walks away it would cause it to deactivate. I had also imported the background music for the game and created a looped audio source game object and added it into the scene. 
+
+Other than this, I do think the breakdown and having an aid to understand what methods or what logic should be placed well served as a great guide for the three of us. Also having a task manager like Trello gave us an understanding of what tasks we had to do and kept us accountable. 
+
+
+### Team Member Alejandra Perez 
 
 To prepare for check-in, I worked on  both technical and visual parts of the project.
 
@@ -71,17 +78,17 @@ Put your individual final Devlog here.
 
 - Enviroment Assets:
 
-    - Anime Girl: https://assetstore.unity.com/packages/3d/characters/humanoids/casual-1-anime-girl-characters-185076
-    - Anime Boy: https://assetstore.unity.com/packages/3d/characters/akio-highschool-uniform-217443
-    - Anime Girl2: https://assetstore.unity.com/packages/3d/characters/aika-highschool-uniform-221860
-    - Flowers: https://assetstore.unity.com/packages/3d/vegetation/flowers/demo-low-poly-flower-pack-325074
-    - Grass: https://assetstore.unity.com/packages/3d/vegetation/plants/flowers-grass-plants-neon3d-239575
-    - Trees: https://assetstore.unity.com/packages/3d/vegetation/trees/low-poly-trees-pack-lite-free-stylized-nature-environment-assets-295464 
-    - Terrain texture: https://assetstore.unity.com/packages/2d/textures-materials/nature/terrain-textures-free-271990
-    - Park: https://assetstore.unity.com/packages/3d/environments/urban/low-poly-park-pack-created-with-fastmesh-asset-292938
-    - Pavilion: https://assetstore.unity.com/packages/3d/props/exterior/pavilion-85680
-    - Teddy Bear: https://assetstore.unity.com/packages/3d/props/interior/pandazole-home-interior-low-poly-pack-203033
+    - [Anime Girl]( https://assetstore.unity.com/packages/3d/characters/humanoids/casual-1-anime-girl-characters-185076)
+    - [Anime Boy](https://assetstore.unity.com/packages/3d/characters/akio-highschool-uniform-217443)
+    - [Anime Girl2](https://assetstore.unity.com/packages/3d/characters/aika-highschool-uniform-221860)
+    - [Flowers](https://assetstore.unity.com/packages/3d/vegetation/flowers/demo-low-poly-flower-pack-325074)
+    - [Grass](https://assetstore.unity.com/packages/3d/vegetation/plants/flowers-grass-plants-neon3d-239575)
+    -  [Trees]( https://assetstore.unity.com/packages/3d/vegetation/trees/low-poly-trees-pack-lite-free-stylized-nature-environment-assets-295464)
+    - [Terrain texture]( https://assetstore.unity.com/packages/2d/textures-materials/nature/terrain-textures-free-271990)
+    - [Park](https://assetstore.unity.com/packages/3d/environments/urban/low-poly-park-pack-created-with-fastmesh-asset-292938)
+    - [Pavilion] (https://assetstore.unity.com/packages/3d/props/exterior/pavilion-85680)
+    - [Teddy Bear](https://assetstore.unity.com/packages/3d/props/interior/pandazole-home-interior-low-poly-pack-203033)
 
 - Music:
-    - https://freemusicarchive.org/music/lowtone-music/just-love-lofi-chill-beat/just-love-1-minute-version-lofi-chill/
-    - https://pixabay.com/sound-effects/film-special-effects-walk-on-grass-2-291985/
+    [ Background Music](https://freemusicarchive.org/music/lowtone-music/just-love-lofi-chill-beat/just-love-1-minute-version-lofi-chill/)
+ 
