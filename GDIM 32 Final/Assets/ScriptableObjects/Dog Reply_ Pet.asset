@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f69f64e584aa00642bdd0f20626eb7d0, type: 3}
+  m_Name: Dog Reply_ Pet
+  m_EditorClassIdentifier: 
+  _lines:
+  - (where do you want to pet the dog)
+  _playerReplyOptions:
+  - Pet the dog's head
+  - Pet the dog's Back
+  _npcReplies:
+  - {fileID: 11400000, guid: 2238bcf59b1d5b842a4645202bcb623c, type: 2}
+  - {fileID: 11400000, guid: 4076d3766bec0a64fa1df35fcc985ab8, type: 2}
