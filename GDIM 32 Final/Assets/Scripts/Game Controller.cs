@@ -9,6 +9,7 @@ public class Locator : MonoBehaviour
     public Player Player { get; private set; }
     public GameObject CrushUI;
     public GameObject cursorui;
+    public GameObject DogUI;
 
     private void Awake()
     {
