@@ -20,10 +20,6 @@ public class NPC_Parent : MonoBehaviour
     [SerializeField] protected float _obstacleCheckRadius = 1.0f;
     [SerializeField] protected float _walkSpeed;
     [SerializeField] protected float _rotateSpeed;
- 
-
-
-
 
     protected NpcState _state;
     protected float _walkTime;

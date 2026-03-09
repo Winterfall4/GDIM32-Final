@@ -15,8 +15,6 @@ public class Park : MonoBehaviour
 
             Invoke("ActivarCollider", 3f);
         }
-
-
     }
 
     void ActivarCollider()
