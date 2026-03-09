@@ -5058,7 +5058,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 547600395}
-  _SightMaxDistance: 3
+  _SightMaxDistance: 1
   _walkTimeMax: 5
   _player: {fileID: 798013360}
   _obstacleCheckDistance: 1
