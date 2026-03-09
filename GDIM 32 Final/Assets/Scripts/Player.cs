@@ -57,6 +57,22 @@ public class Player : MonoBehaviour
             _animator.SetBool("Walk", false);
         }
 
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            if (_ui.activeSelf == false)
+            {
+                _animator.SetBool("Walk", true);
+            }
+        }
+
+        if (Input.GetKeyUp(KeyCode.S))
+        {
+           
+            _animator.SetBool("Walk", false);
+        }
+
+
+
         //Player can remove item with Q
         if(Input.GetKeyDown(KeyCode.Q))
         {
