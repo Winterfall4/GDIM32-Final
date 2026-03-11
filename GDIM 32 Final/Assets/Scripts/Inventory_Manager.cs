@@ -49,7 +49,7 @@ public class InventoryManager : MonoBehaviour
         Items.Add(item);
         //This calls the list to update UI 
         ListItem();
-        InventaryMessage.SetActive(false);
+        //InventaryMessage.SetActive(false);
         return true;
     }
 
