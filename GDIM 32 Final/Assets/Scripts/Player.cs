@@ -10,10 +10,18 @@ public class Player : MonoBehaviour
     [SerializeField] private float _moveSpeed;
     [SerializeField] private float _mouseSensitivity;
     [SerializeField] private GameObject _ui;
+    
+    public GameObject InventaryMessage;
+    public List<Item> Items = new List<Item>();
+    public int max = 5; 
+
+
+
     public GameObject cursorui;
     private Transform _cameraTrans;
     private float _rotationX;
     private float _rotationY;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -77,6 +85,12 @@ public class Player : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Q))
         {
             InventoryManager.Instance.DropItem(transform);
+
+            if(Items.Count < max)
+            {
+                InventaryMessage.SetActive(false);
+            }
+
         }
         
         //Method to be able to click on the item instead of using mousedown( mousedown was causing problems)

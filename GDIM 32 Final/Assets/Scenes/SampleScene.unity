@@ -8620,6 +8620,9 @@ MonoBehaviour:
   _moveSpeed: 7
   _mouseSensitivity: 5
   _ui: {fileID: 1108472506}
+  InventaryMessage: {fileID: 1826889694}
+  Items: []
+  max: 5
   cursorui: {fileID: 1244236228}
 --- !u!4 &798013361 stripped
 Transform:
