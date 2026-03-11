@@ -4801,7 +4801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 473410c71cc4ffd4cbe8c254fd4bb396, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dialogue: {fileID: 0}
+  _dialogue: {fileID: 477597909}
   _dialogueStartNode: {fileID: 11400000, guid: f2fd3dbb4f0e1b749a044e4a61e206e0, type: 2}
 --- !u!1 &480276589 stripped
 GameObject:
@@ -8620,7 +8620,7 @@ MonoBehaviour:
   _moveSpeed: 7
   _mouseSensitivity: 5
   _ui: {fileID: 1108472506}
-  InventaryMessage: {fileID: 1826889694}
+  InventaryMessage: {fileID: 0}
   Items: []
   max: 5
   cursorui: {fileID: 1244236228}
@@ -19124,7 +19124,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -26, y: 218}
+  m_AnchoredPosition: {x: -198, y: 257}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1826889696
@@ -19147,7 +19147,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Inventory Full! Press "Q" to drop
+  m_text: Full !
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -19210,7 +19210,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -20.406242, y: 0, z: -159.29474, w: 0}
+  m_margin: {x: -20.406242, y: 0, z: -65.3078, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
