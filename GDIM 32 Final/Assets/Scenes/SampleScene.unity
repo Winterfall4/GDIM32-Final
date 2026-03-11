@@ -17835,13 +17835,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Teddy
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -1075893526689642102, guid: 07cd12ab294a9f143b4db894da343085, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7864949313543132107, guid: 07cd12ab294a9f143b4db894da343085, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1730863893}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07cd12ab294a9f143b4db894da343085, type: 3}
 --- !u!4 &1646325243 stripped
 Transform:
@@ -18310,24 +18308,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6307170488933325505, guid: bba7ed6ed220b0f4c87b28d426731584, type: 3}
   m_PrefabInstance: {fileID: 1719643702}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1730863892 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7864949313543132107, guid: 07cd12ab294a9f143b4db894da343085, type: 3}
-  m_PrefabInstance: {fileID: 1646325242}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1730863893
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1730863892}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1de4efa242a744d41a1d061b2944b7c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Item: {fileID: 11400000, guid: 70d132ccade574f43a1718eb1877d3b2, type: 2}
 --- !u!1 &1733367343 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7085910784305179521, guid: 229b2b685305d3a4b9c8bdbb569376e8, type: 3}
