@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Flower
   - NPC
+  - NavMesh
   layers:
   - Default
   - TransparentFX
@@ -13,8 +14,8 @@ TagManager:
   - Post-Processing
   - Water
   - UI
-  - 
-  - 
+  - Park
+  - NavMesh
   - 
   - 
   - 
