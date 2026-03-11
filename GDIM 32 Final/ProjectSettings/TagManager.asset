@@ -7,6 +7,9 @@ TagManager:
   - Flower
   - NPC
   - NavMesh
+  - Red
+  - Blue
+  - Purple
   layers:
   - Default
   - TransparentFX
