@@ -11,7 +11,7 @@ public class DogDialogueTest : MonoBehaviour
     [SerializeField] private GameObject _playerMultiOptions;
     [SerializeField] private TMP_Text _option1;
     [SerializeField] private TMP_Text _option2;
-    [SerializeField] private TMP_Text _option3;
+   
 
     public void ShowDialogue(string dialogue)
     {
@@ -22,6 +22,7 @@ public class DogDialogueTest : MonoBehaviour
         _playerMultiOptions.SetActive(false);
 
         _npcText.text = dialogue;
+        Debug.Log("dialogue is Showing");
     }
 
     public void ShowPlayerOptions()
@@ -55,16 +56,9 @@ public class DogDialogueTest : MonoBehaviour
             _option2.transform.parent.gameObject.SetActive(false);
         }
 
-        if (options.Length >= 3)
-        {
-            _option3.transform.parent.gameObject.SetActive(true);
-            _option3.text = options[2];
+       
         }
-        else
-        {
-            _option3.transform.parent.gameObject.SetActive(false);
-        }
-    }
+    
 
     public void HideDialogue()
     {
