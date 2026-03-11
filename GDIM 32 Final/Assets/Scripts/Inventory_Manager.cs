@@ -15,8 +15,9 @@ public class InventoryManager : MonoBehaviour
 
     public Transform ItemContent;
     public GameObject InventoryItem;
-    public int max = 5; 
+    public int Max = 5; 
     public GameObject InventaryMessage;
+
 
 
     //private void Start()
@@ -40,13 +41,15 @@ public class InventoryManager : MonoBehaviour
 
     public bool Add(Item item)
     {
-        if (Items.Count >= max)
+        if (Items.Count >= Max)
         {
             InventaryMessage.SetActive(true);
             return false;
         }
         //PickUp items are here
         Items.Add(item);
+
+        FlowBouquet(item);
         //This calls the list to update UI 
         ListItem();
         //InventaryMessage.SetActive(false);
@@ -103,6 +106,37 @@ public class InventoryManager : MonoBehaviour
         Items.Remove(itemDrop);
         
         //tells UI
+        ListItem();
+    }
+
+    public void FlowBouquet(Item flower)
+    {
+        int Count = 0;
+
+        foreach(Item item in Items)
+        {
+            if (item == flower)
+            {
+                Count++;
+            }
+        }
+
+        if(Count >= 3)
+        {
+            int removed = 0;
+
+            for(int i = Items.Count -1; i >=0; i--)
+            {
+                if(Items[i] == flower && removed < 3)
+                {
+                    Items.RemoveAt(i);
+                    removed++;
+                }
+            }
+
+            Items.Add(flower.Bouquet);
+        }
+
         ListItem();
     }
 }

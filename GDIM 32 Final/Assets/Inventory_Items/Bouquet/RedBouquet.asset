@@ -15,4 +15,5 @@ MonoBehaviour:
   itemName: Bouquet
   description: Red flower Bouquet
   icon: {fileID: 21300000, guid: 7e44b45fad8de8944b3c3fdaad63b4fe, type: 3}
-  prefab: {fileID: 0}
+  prefab: {fileID: 6604974848053910312, guid: 5a8ebf5ddd9654946a92c86045525ab4, type: 3}
+  Bouquet: {fileID: 0}
