@@ -8644,7 +8644,7 @@ MonoBehaviour:
   _moveSpeed: 7
   _mouseSensitivity: 5
   _ui: {fileID: 1108472506}
-  InventaryMessage: {fileID: 0}
+  InventaryMessage: {fileID: 1826889694}
   Items: []
   max: 5
   cursorui: {fileID: 1244236228}
@@ -14051,7 +14051,7 @@ MonoBehaviour:
   Items: []
   ItemContent: {fileID: 486654959}
   InventoryItem: {fileID: 4930409308130751221, guid: 05b5632599ad70b4dbb37f11514f8fc6, type: 3}
-  max: 5
+  Max: 5
   InventaryMessage: {fileID: 1826889694}
 --- !u!4 &1254691908
 Transform:

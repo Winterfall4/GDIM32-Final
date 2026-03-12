@@ -15,4 +15,5 @@ MonoBehaviour:
   itemName: Bouquet
   description: Blue Flower Bouquet
   icon: {fileID: 21300000, guid: 943a8b228c318584ab7fa933843bf371, type: 3}
-  prefab: {fileID: 0}
+  prefab: {fileID: 2207395478542488214, guid: cdcf2c29bd4552b4dabc96fc26266208, type: 3}
+  Bouquet: {fileID: 0}

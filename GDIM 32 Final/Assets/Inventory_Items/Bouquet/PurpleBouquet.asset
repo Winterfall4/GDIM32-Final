@@ -15,4 +15,5 @@ MonoBehaviour:
   itemName: Bouquet
   description: Purple Bouquet
   icon: {fileID: 21300000, guid: af110658ca253f84bb83d664cba3ff6f, type: 3}
-  prefab: {fileID: 0}
+  prefab: {fileID: 1007433610483498742, guid: 4a847a2e71be8cd458489b721f9b39fd, type: 3}
+  Bouquet: {fileID: 0}
