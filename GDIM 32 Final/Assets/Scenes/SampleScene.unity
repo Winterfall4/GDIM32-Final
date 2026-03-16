@@ -2808,10 +2808,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 82c2230e3c13b5246a2bf3c0bb568752, type: 3}
-        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
-        m_MethodName: 
-        m_Mode: 5
+      - m_Target: {fileID: 876731302}
+        m_TargetAssemblyTypeName: DogDialogue, Assembly-CSharp
+        m_MethodName: SelectedOption
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5786,7 +5786,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 522438121}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 876731302}
+        m_TargetAssemblyTypeName: DogDialogue, Assembly-CSharp
+        m_MethodName: SelectedOption
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &522438121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11356,7 +11368,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1033703313}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 876731302}
+        m_TargetAssemblyTypeName: DogDialogue, Assembly-CSharp
+        m_MethodName: SelectedOption
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1033703313
 MonoBehaviour:
   m_ObjectHideFlags: 0
