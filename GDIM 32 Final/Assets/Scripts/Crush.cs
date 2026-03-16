@@ -2,65 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Crush : NPC
+public class Crush : Dialogue
 {
     private bool playerInRange = false;
     public delegate void PlayerInteract();
     public static event PlayerInteract OnPlayerClick;
-    public GameObject interacttext;
-    [SerializeField] private GameObject _ui;
 
     private void Start()
     {
         
         interacttext.SetActive(false);  
     }
-
-    /*
-    void Update()
-    {
-        // If player is in range and presses 'E'
-        if (playerInRange && Input.GetKeyDown(KeyCode.E))
-        {
-            Interact();
-            interacttext.SetActive(false);
-        }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            playerInRange = true;
-    
-           
-           interacttext.SetActive(true);
-        }
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            playerInRange = false;
-
-            
-            if (Locator.Instance != null)
-            {
-                Locator.Instance.CrushUI.SetActive(false);
-                interacttext.SetActive(false);
-            }
-
-            
-           
-        }
-    }
-
-    void Interact()
-    {
-        OnPlayerClick.Invoke();
-       
-    }
-    */
 
     private void Update()
     {
@@ -73,16 +25,19 @@ public class Crush : NPC
         switch (_currentState)
         {
             case NPCState.isIdle:
-                playerInRange = false;
-                Locator.Instance.CrushUI.SetActive(false);
+                Locator.Instance.DogUI.SetActive(false);
                 interacttext.SetActive(false);
                 break;
             case NPCState.isTalking:
-                playerInRange = true;
                 interacttext.SetActive(true);
-                if (Input.GetKeyDown(KeyCode.E))
+                if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Space))
                 {
-                    _ui.SetActive(true);
+                    AdvanceDialogue();
+                    Cursor.lockState = CursorLockMode.None;
+                }
+                else
+                {
+                    //EndDialogue();
                 }
                 break;
         }

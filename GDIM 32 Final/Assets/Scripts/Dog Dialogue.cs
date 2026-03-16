@@ -2,36 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DogDialogue : NPC
+public class DogDialogue : Dialogue
 {
-    [SerializeField] private DialogueHandler _dialogue;
-    [SerializeField] private DialogueNode _dialogueStartNode;
-    [SerializeField] private GameObject _ui;
-
+ 
     [SerializeField] private DialogueNode giftNode;
     [SerializeField] private Item Teddy;
     private bool GiftGiven = false;
 
-
-    public GameObject interacttext;
-    private DialogueNode _currentNode;
-    private int _currentLine = 0;
-    private bool _runningDialogue;
-    private bool _waitingForPlayerResponse;
-    private float _interactionDistance;
-
-
-    private void Start()
-    {
-        _currentNode = _dialogueStartNode;
-    }
 
     private void Update()
     {
         CheckDistance();
         DogCheck();
     }
-    private void AdvanceDialogue()
+    public override void AdvanceDialogue()
     {
         _runningDialogue = true;
 
@@ -62,25 +46,6 @@ public class DogDialogue : NPC
             // if there are no NPC or player lines left, close dialogue UI
             EndDialogue();
         }
-    }
-
-    private void EndDialogue()
-    {
-        _runningDialogue = false;
-        _waitingForPlayerResponse = false;
-        _currentNode = _dialogueStartNode;
-        _currentLine = 0;
-        _dialogue.HideDialogue();
-       
-    }
-
-    public void SelectedOption(int option)
-    {
-        _currentLine = 0;
-        _waitingForPlayerResponse = false;
-
-        _currentNode = _currentNode._npcReplies[option];
-        AdvanceDialogue();
     }
 
     private void DogCheck()

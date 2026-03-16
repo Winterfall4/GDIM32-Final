@@ -8489,8 +8489,10 @@ MonoBehaviour:
   _talkingDistance: 2
   _distance: 0
   _player: {fileID: 798013357}
-  interacttext: {fileID: 467109452}
+  _dialogue: {fileID: 801654822}
+  _dialogueStartNode: {fileID: 11400000, guid: 51e44fb255aeac54791777d0fcc617ee, type: 2}
   _ui: {fileID: 1108472506}
+  interacttext: {fileID: 467109452}
 --- !u!4 &797537525 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2079631976815237974, guid: f0634d5575c7e2a41bd717d5db0f4cc7, type: 3}
@@ -9741,7 +9743,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 876731298}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 473410c71cc4ffd4cbe8c254fd4bb396, type: 3}
   m_Name: 
@@ -9753,9 +9755,9 @@ MonoBehaviour:
   _dialogue: {fileID: 38231267}
   _dialogueStartNode: {fileID: 11400000, guid: f2fd3dbb4f0e1b749a044e4a61e206e0, type: 2}
   _ui: {fileID: 1997002959}
+  interacttext: {fileID: 1556378289}
   giftNode: {fileID: 11400000, guid: 2238bcf59b1d5b842a4645202bcb623c, type: 2}
   Teddy: {fileID: 11400000, guid: 70d132ccade574f43a1718eb1877d3b2, type: 2}
-  interacttext: {fileID: 1556378289}
 --- !u!1 &881470988 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2685183470934089034, guid: 5346524528e379a4ea69fb77935c7662, type: 3}
