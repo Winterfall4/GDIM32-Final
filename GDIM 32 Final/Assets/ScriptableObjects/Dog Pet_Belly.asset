@@ -10,16 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f69f64e584aa00642bdd0f20626eb7d0, type: 3}
-  m_Name: Dog Reply_ Treat
+  m_Name: Dog Pet_Belly
   m_EditorClassIdentifier: 
   _lines:
-  - You remember having some cat and dog treats in your bag but you forgot which
-    bag holds which..
-  - There is a green bag and blue bag of treats.
-  - Which one do your grab?
+  - As you rub the dog's belly for a while, he starts to close his eyes slowly until
+    he falls asleep.
+  - It should be safe for me to get my gift now.
   _playerReplyOptions:
-  - The Green One
-  - The Blue One
+  - Get the gift back
   _npcReplies:
-  - {fileID: 11400000, guid: bd1abc220a2017e4daeab2cf0c74666a, type: 2}
   - {fileID: 11400000, guid: 2238bcf59b1d5b842a4645202bcb623c, type: 2}

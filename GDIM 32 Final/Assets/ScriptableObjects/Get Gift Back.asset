@@ -10,14 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f69f64e584aa00642bdd0f20626eb7d0, type: 3}
-  m_Name: Dog Reply_ Pet
+  m_Name: Get Gift Back
   m_EditorClassIdentifier: 
   _lines:
-  - The dog seems friendly enough.
-  - Where should I pet him?
-  _playerReplyOptions:
-  - Pet the dog's head
-  - Pet the dog's back
-  _npcReplies:
-  - {fileID: 11400000, guid: d8b6347791113354abf80b829e8a52df, type: 2}
-  - {fileID: 11400000, guid: 4076d3766bec0a64fa1df35fcc985ab8, type: 2}
+  - You slowly reach for your gift and manage to grab it.
+  - YES! I can finally give Akio his gift now!
+  _playerReplyOptions: []
+  _npcReplies: []

@@ -10,16 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f69f64e584aa00642bdd0f20626eb7d0, type: 3}
-  m_Name: Dog Reply_ Treat
+  m_Name: Dog Pet_Head
   m_EditorClassIdentifier: 
   _lines:
-  - You remember having some cat and dog treats in your bag but you forgot which
-    bag holds which..
-  - There is a green bag and blue bag of treats.
-  - Which one do your grab?
+  - The dog growls. He did not seem to like that...
   _playerReplyOptions:
-  - The Green One
-  - The Blue One
+  - I should probably leave now...
   _npcReplies:
-  - {fileID: 11400000, guid: bd1abc220a2017e4daeab2cf0c74666a, type: 2}
-  - {fileID: 11400000, guid: 2238bcf59b1d5b842a4645202bcb623c, type: 2}
+  - {fileID: 11400000, guid: f2fd3dbb4f0e1b749a044e4a61e206e0, type: 2}

@@ -13,12 +13,15 @@ MonoBehaviour:
   m_Name: Dog Dialogue Start
   m_EditorClassIdentifier: 
   _lines:
-  - ( starting dialogue line)
+  - As you approach the dog, you notice something next to him.
+  - Wait a minute...THAT'S MY GIFT FOR AKITO!!!
+  - You and the dog stare at each other.
+  - What do you want to do now?
   _playerReplyOptions:
-  - '*pet the dog*'
-  - '*get a treat from bag*'
-  - '*grab gift*'
+  - Pet the dog
+  - Grab gift
+  - Get a treat from your bag
   _npcReplies:
-  - {fileID: 11400000, guid: 4076d3766bec0a64fa1df35fcc985ab8, type: 2}
+  - {fileID: 11400000, guid: 3737d6c60ff1ade4092a2341e521f94b, type: 2}
+  - {fileID: 11400000, guid: da395273282cda043b425189e6162ceb, type: 2}
   - {fileID: 11400000, guid: f4d70906e5765fc4caef5db03e099719, type: 2}
-  - {fileID: 0}

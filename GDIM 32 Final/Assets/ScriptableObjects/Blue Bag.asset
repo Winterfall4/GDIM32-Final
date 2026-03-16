@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f69f64e584aa00642bdd0f20626eb7d0, type: 3}
-  m_Name: Dog Reply_ Gift
+  m_Name: Blue Bag
   m_EditorClassIdentifier: 
   _lines:
-  - (you didn't get the gift)
+  - You grab a treat from the blue bag and the dog seems to not really like the smell.
+  - The dog starts to growl at you.
+  - 'It''s probably not safe for me to be here for now. '
   _playerReplyOptions:
-  - (leave dog)
-  - (try again)
+  - I should probably leave...
   _npcReplies:
   - {fileID: 11400000, guid: f2fd3dbb4f0e1b749a044e4a61e206e0, type: 2}
