@@ -100,19 +100,35 @@ public class InventoryManager : MonoBehaviour
 
         //This Spawns the item in front of player
         Vector3 spawnPosition = playerTransform.position + playerTransform.forward * 2f;
-        Instantiate(itemDrop.prefab, spawnPosition, Quaternion.identity);
+
+        //if item is a bouquet because this ones have this part empty.
+        if (itemDrop.Bouquet == null)
+        {
+            //This is a loop that indicates how many times the instatiate would need to repeat
+            for(int i = 0; i < 3; i++)
+            {
+                //This vector is to make the flower seperate form each other
+                Vector3 separate = new Vector3(i * 0.5f, 0, 0);
+                Instantiate(itemDrop.prefab, spawnPosition + separate, Quaternion.identity);    
+            }
+        }
+        else 
+        {
+            Instantiate(itemDrop.prefab, spawnPosition, Quaternion.identity);
+        }
 
         //remove item of inventory 
         Items.Remove(itemDrop);
-        
         //tells UI
         ListItem();
     }
 
+    //Bouquet flowers to bouquet method 
     public void FlowBouquet(Item flower)
     {
         int Count = 0;
 
+        //For each flower of the same type count adds 1
         foreach(Item item in Items)
         {
             if (item == flower)
@@ -121,6 +137,8 @@ public class InventoryManager : MonoBehaviour
             }
         }
 
+        // if we have 3 of the same flower remove them and instead creat a
+        // bouquet.
         if(Count >= 3)
         {
             int removed = 0;
@@ -133,10 +151,12 @@ public class InventoryManager : MonoBehaviour
                     removed++;
                 }
             }
-
+            
+            //adds the bouquet to the inventory
             Items.Add(flower.Bouquet);
         }
 
+        //Updates UI inventory
         ListItem();
     }
 }
