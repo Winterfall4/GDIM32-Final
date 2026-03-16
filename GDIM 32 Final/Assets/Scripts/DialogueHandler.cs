@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class DogDialogueTest : MonoBehaviour
+public class DialogueHandler : MonoBehaviour
 {
     [SerializeField] private TMP_Text _npcText;
     [SerializeField] private GameObject _npcDialogue;

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DogDialogue : NPC
 {
-    [SerializeField] private DogDialogueTest _dialogue;
+    [SerializeField] private DialogueHandler _dialogue;
     [SerializeField] private DialogueNode _dialogueStartNode;
     [SerializeField] private GameObject _ui;
 
