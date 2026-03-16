@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f69f64e584aa00642bdd0f20626eb7d0, type: 3}
+  m_Name: CrushStartNode
+  m_EditorClassIdentifier: 
+  _lines:
+  - 'Haruka: Good morning Akito. How are you today?'
+  - "Akito: I\u2019m fine. Could be better though. I\u2019ve just been stressed out
+    with exams coming up."
+  - "Haruka: That must be really tough. But I understand though. I\u2019ve been busy
+    preparing for exams too."
+  - 'Haruka: I heard it was your birthday today, I hope you have a nice day today.'
+  - 'Akito: Wow thanks for remembering.'
+  - '*You reach inside your bag'
+  - "\"Omg where is my gift for Akio?! The teddy bear! It\u2019s gone!\""
+  - 'Akito: Hey are you looking for something?'
+  _playerReplyOptions:
+  - It's nothing...
+  - Just checking if I have my books.
+  _npcReplies:
+  - {fileID: 0}
+  - {fileID: 0}
