@@ -2,15 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DogDialogue : MonoBehaviour
+public class DogDialogue : NPC
 {
     [SerializeField] private DogDialogueTest _dialogue;
     [SerializeField] private DialogueNode _dialogueStartNode;
+    [SerializeField] private GameObject _ui;
 
+    public GameObject interacttext;
     private DialogueNode _currentNode;
     private int _currentLine = 0;
     private bool _runningDialogue;
     private bool _waitingForPlayerResponse;
+    private float _interactionDistance;
+
+
+    private void Start()
+    {
+        _currentNode = _dialogueStartNode;
+    }
+
+    private void Update()
+    {
+        CheckDistance();
+        DogCheck();
+    }
     private void AdvanceDialogue()
     {
         _runningDialogue = true;
@@ -52,5 +67,28 @@ public class DogDialogue : MonoBehaviour
 
         _currentNode = _currentNode._npcReplies[option];
         AdvanceDialogue();
+    }
+
+    private void DogCheck()
+    {
+        switch (_currentState)
+        {
+            case NPCState.isIdle:
+                Locator.Instance.DogUI.SetActive(false);
+                interacttext.SetActive(false);
+                break;
+            case NPCState.isTalking:
+                interacttext.SetActive(true);
+                if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Space))
+                {
+                    AdvanceDialogue();
+                    Cursor.lockState = CursorLockMode.None;
+                }
+                else
+                {
+                    //EndDialogue();
+                }
+                    break;
+        }
     }
 }
