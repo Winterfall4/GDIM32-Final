@@ -9753,6 +9753,8 @@ MonoBehaviour:
   _dialogue: {fileID: 38231267}
   _dialogueStartNode: {fileID: 11400000, guid: f2fd3dbb4f0e1b749a044e4a61e206e0, type: 2}
   _ui: {fileID: 1997002959}
+  giftNode: {fileID: 11400000, guid: 2238bcf59b1d5b842a4645202bcb623c, type: 2}
+  Teddy: {fileID: 11400000, guid: 70d132ccade574f43a1718eb1877d3b2, type: 2}
   interacttext: {fileID: 1556378289}
 --- !u!1 &881470988 stripped
 GameObject:
@@ -14669,6 +14671,7 @@ MonoBehaviour:
   InventoryItem: {fileID: 4930409308130751221, guid: 05b5632599ad70b4dbb37f11514f8fc6, type: 3}
   Max: 5
   InventaryMessage: {fileID: 1826889694}
+  isBouquet: 0
 --- !u!4 &1254691908
 Transform:
   m_ObjectHideFlags: 0
