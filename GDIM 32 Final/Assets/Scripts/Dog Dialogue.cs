@@ -8,6 +8,11 @@ public class DogDialogue : NPC
     [SerializeField] private DialogueNode _dialogueStartNode;
     [SerializeField] private GameObject _ui;
 
+    [SerializeField] private DialogueNode giftNode;
+    [SerializeField] private Item Teddy;
+    private bool GiftGiven = false;
+
+
     public GameObject interacttext;
     private DialogueNode _currentNode;
     private int _currentLine = 0;
@@ -29,6 +34,15 @@ public class DogDialogue : NPC
     private void AdvanceDialogue()
     {
         _runningDialogue = true;
+
+        //This checks if the current node is The "giftNode" and it cheacks if the player already 
+        // has the gift with a bool. 
+        if (_currentNode == giftNode && !GiftGiven)
+        {
+            //This adds The teddy to the inventory
+            InventoryManager.Instance.Add(Teddy);
+            GiftGiven = true;
+        }
        
 
         if (_currentLine < _currentNode._lines.Length)

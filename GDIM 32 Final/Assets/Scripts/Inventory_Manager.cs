@@ -17,6 +17,7 @@ public class InventoryManager : MonoBehaviour
     public GameObject InventoryItem;
     public int Max = 5; 
     public GameObject InventaryMessage;
+    public bool isBouquet;
 
 
 
@@ -102,7 +103,7 @@ public class InventoryManager : MonoBehaviour
         Vector3 spawnPosition = playerTransform.position + playerTransform.forward * 2f;
 
         //if item is a bouquet because this ones have this part empty.
-        if (itemDrop.Bouquet == null)
+        if (itemDrop.IsBouquet)
         {
             //This is a loop that indicates how many times the instatiate would need to repeat
             for(int i = 0; i < 3; i++)
@@ -151,7 +152,7 @@ public class InventoryManager : MonoBehaviour
                     removed++;
                 }
             }
-            
+
             //adds the bouquet to the inventory
             Items.Add(flower.Bouquet);
         }

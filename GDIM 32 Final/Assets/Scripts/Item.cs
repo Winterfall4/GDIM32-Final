@@ -12,5 +12,6 @@ public class Item : ScriptableObject
     public Sprite icon;
     public GameObject prefab; 
     public Item Bouquet;
+    public bool IsBouquet;
 }
 
