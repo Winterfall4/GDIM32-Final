@@ -2820,6 +2820,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 797537523}
+        m_TargetAssemblyTypeName: Dialogue, Assembly-CSharp
+        m_MethodName: SelectedOption
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &303903626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5790,6 +5802,18 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 876731302}
         m_TargetAssemblyTypeName: DogDialogue, Assembly-CSharp
+        m_MethodName: SelectedOption
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 797537523}
+        m_TargetAssemblyTypeName: Dialogue, Assembly-CSharp
         m_MethodName: SelectedOption
         m_Mode: 3
         m_Arguments:
@@ -9743,7 +9767,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 876731298}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 473410c71cc4ffd4cbe8c254fd4bb396, type: 3}
   m_Name: 
@@ -11431,6 +11455,18 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 876731302}
         m_TargetAssemblyTypeName: DogDialogue, Assembly-CSharp
+        m_MethodName: SelectedOption
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 797537523}
+        m_TargetAssemblyTypeName: Dialogue, Assembly-CSharp
         m_MethodName: SelectedOption
         m_Mode: 3
         m_Arguments:
@@ -23749,6 +23785,10 @@ PrefabInstance:
     - target: {fileID: 6029364925086953252, guid: 8e5d7d883111d694e8e13e9f98fc508f, type: 3}
       propertyPath: m_Name
       value: dog
+      objectReference: {fileID: 0}
+    - target: {fileID: 6029364925086953252, guid: 8e5d7d883111d694e8e13e9f98fc508f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6406172389527369118, guid: 8e5d7d883111d694e8e13e9f98fc508f, type: 3}
       propertyPath: m_LocalPosition.x

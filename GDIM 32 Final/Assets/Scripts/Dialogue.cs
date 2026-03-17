@@ -56,11 +56,14 @@ public class Dialogue : NPC
 
     public void SelectedOption(int option)
     {
-        _currentLine = 0;
-        _waitingForPlayerResponse = false;
+        if (_isTalkingToNPC == true)
+        {
+            _currentLine = 0;
+            _waitingForPlayerResponse = false;
 
-        _currentNode = _currentNode._npcReplies[option];
-        AdvanceDialogue();
+            _currentNode = _currentNode._npcReplies[option];
+            AdvanceDialogue();
+        }
     }
 
 }

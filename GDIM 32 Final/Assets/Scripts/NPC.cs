@@ -16,6 +16,8 @@ public class NPC : MonoBehaviour
     public float _distance;
     [SerializeField] public GameObject _player;
 
+    protected bool _isTalkingToNPC;
+
 
     public void CheckDistance()
     {
@@ -24,11 +26,13 @@ public class NPC : MonoBehaviour
         if (_distance < _talkingDistance)
         {
             _currentState = NPCState.isTalking;
+            _isTalkingToNPC = true;
         }
 
         else
         {
             _currentState = NPCState.isIdle;
+            _isTalkingToNPC = false;
         }
     }
 }

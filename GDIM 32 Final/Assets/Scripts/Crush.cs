@@ -8,11 +8,6 @@ public class Crush : Dialogue
     public delegate void PlayerInteract();
     public static event PlayerInteract OnPlayerClick;
 
-    private void Start()
-    {
-        
-        interacttext.SetActive(false);  
-    }
 
     private void Update()
     {
@@ -25,7 +20,6 @@ public class Crush : Dialogue
         switch (_currentState)
         {
             case NPCState.isIdle:
-                Locator.Instance.DogUI.SetActive(false);
                 interacttext.SetActive(false);
                 break;
             case NPCState.isTalking:

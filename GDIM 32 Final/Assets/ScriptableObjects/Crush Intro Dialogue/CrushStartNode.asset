@@ -27,5 +27,5 @@ MonoBehaviour:
   - It's nothing...
   - Just checking if I have my books.
   _npcReplies:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: f84259523b24176478e1f616801dcdbf, type: 2}
+  - {fileID: 11400000, guid: f84259523b24176478e1f616801dcdbf, type: 2}
