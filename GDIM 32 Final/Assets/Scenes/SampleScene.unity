@@ -1536,6 +1536,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 899261326}
   m_SourcePrefab: {fileID: 100100000, guid: 229b2b685305d3a4b9c8bdbb569376e8, type: 3}
+--- !u!1 &140158187 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7864949313543132107, guid: 07cd12ab294a9f143b4db894da343085, type: 3}
+  m_PrefabInstance: {fileID: 1646325242}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &144365928 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2685183470934089034, guid: 5346524528e379a4ea69fb77935c7662, type: 3}
@@ -8217,6 +8222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ae87b0447d1bf04983d6d45ae41d760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backgroundmusic: {fileID: 0}
   track1: {fileID: 741609208}
   track2: {fileID: 1947181191}
   fadeDuration: 1
@@ -9829,6 +9835,7 @@ MonoBehaviour:
   interacttext: {fileID: 1556378289}
   giftNode: {fileID: 11400000, guid: 2238bcf59b1d5b842a4645202bcb623c, type: 2}
   Teddy: {fileID: 11400000, guid: 70d132ccade574f43a1718eb1877d3b2, type: 2}
+  DesactivateTeddy: {fileID: 140158187}
 --- !u!1 &881470988 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2685183470934089034, guid: 5346524528e379a4ea69fb77935c7662, type: 3}
@@ -20100,7 +20107,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -198, y: 257}
+  m_AnchoredPosition: {x: -31, y: 221}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1826889696
@@ -20123,7 +20130,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Full !
+  m_text: Full Inventory! Press "Q" to drop.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -20186,7 +20193,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -20.406242, y: 0, z: -65.3078, w: 0}
+  m_margin: {x: -20.406242, y: 0, z: -207.56389, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

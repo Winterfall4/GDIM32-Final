@@ -8,6 +8,8 @@ public class DogDialogue : Dialogue
     [SerializeField] private DialogueNode giftNode;
     [SerializeField] private Item Teddy;
     private bool GiftGiven = false;
+    [SerializeField] private GameObject DesactivateTeddy;
+    
 
 
     private void Update()
@@ -23,9 +25,13 @@ public class DogDialogue : Dialogue
         // has the gift with a bool. 
         if (_currentNode == giftNode && !GiftGiven)
         {
+            bool TeddyAdded = InventoryManager.Instance.Add(Teddy);
             //This adds The teddy to the inventory
-            InventoryManager.Instance.Add(Teddy);
-            GiftGiven = true;
+            if(TeddyAdded)
+            {
+                GiftGiven = true;
+                DesactivateTeddy.SetActive(false);
+            }
         }
        
 
