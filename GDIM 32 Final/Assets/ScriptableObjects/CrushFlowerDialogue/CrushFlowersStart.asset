@@ -16,10 +16,8 @@ MonoBehaviour:
   - 'Haruka: Hey Akito. I actually wanted to give you something else as well today.'
   - 'Akito: Oh really? What is it?'
   _playerReplyOptions:
-  - Red roses
-  - Blue flowers
-  - Purple flowers
+  - Some flowers from the garden
+  - This bouquet of fresh flowers
   _npcReplies:
   - {fileID: 11400000, guid: e2a4c0d69214a374ea5d47c57c21c8ea, type: 2}
-  - {fileID: 11400000, guid: 07188a7a7e72ac54bbcd20d9065bb3b2, type: 2}
-  - {fileID: 11400000, guid: 07188a7a7e72ac54bbcd20d9065bb3b2, type: 2}
+  - {fileID: 11400000, guid: e2a4c0d69214a374ea5d47c57c21c8ea, type: 2}

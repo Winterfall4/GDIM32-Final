@@ -47,7 +47,6 @@ public class Crush : Dialogue
         }
         if (InventoryManager.Instance.PlayerHasItem(RedBouquet) || InventoryManager.Instance.PlayerHasItem(PurpleBouquet) || InventoryManager.Instance.PlayerHasItem(BlueBouquet))
         {
-            Debug.Log("BOUQUET IN INVENTORY");
             if (gaveGift && !gaveFlowers)
             {
                 _currentNode = flowerNode;
