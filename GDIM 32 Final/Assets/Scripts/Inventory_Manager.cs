@@ -63,6 +63,11 @@ public class InventoryManager : MonoBehaviour
         Items.Remove(item);
     }
 
+    public bool PlayerHasItem(Item item)
+    {
+        return Items.Contains(item);
+    }
+
 
     public void ListItem()
     {
