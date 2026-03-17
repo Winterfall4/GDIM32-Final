@@ -9,7 +9,7 @@ public class Dialogue : NPC
     [SerializeField] protected GameObject _ui;
 
     public GameObject interacttext;
-    protected DialogueNode _currentNode;
+    [SerializeField] protected DialogueNode _currentNode;
     protected int _currentLine = 0;
     protected bool _runningDialogue;
     protected bool _waitingForPlayerResponse;
@@ -44,7 +44,7 @@ public class Dialogue : NPC
         }
     }
 
-    public void EndDialogue()
+    public virtual void EndDialogue()
     {
         _runningDialogue = false;
         _waitingForPlayerResponse = false;

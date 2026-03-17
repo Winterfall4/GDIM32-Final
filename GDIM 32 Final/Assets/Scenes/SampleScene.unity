@@ -8558,6 +8558,13 @@ MonoBehaviour:
   _dialogueStartNode: {fileID: 11400000, guid: 51e44fb255aeac54791777d0fcc617ee, type: 2}
   _ui: {fileID: 1108472506}
   interacttext: {fileID: 467109452}
+  _currentNode: {fileID: 0}
+  presentNode: {fileID: 11400000, guid: 01d8b414b1f61a445b0a460afe120e67, type: 2}
+  flowerNode: {fileID: 11400000, guid: a17dff1800cb1a04b937b04d6efdb7fc, type: 2}
+  rightPresentNode: {fileID: 11400000, guid: 3920da8fe1e2f9344a3c07efdfe3b9c8, type: 2}
+  rightFlowerNode: {fileID: 11400000, guid: e2a4c0d69214a374ea5d47c57c21c8ea, type: 2}
+  Teddy: {fileID: 11400000, guid: 70d132ccade574f43a1718eb1877d3b2, type: 2}
+  _currentMode: 0
 --- !u!4 &797537525 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2079631976815237974, guid: f0634d5575c7e2a41bd717d5db0f4cc7, type: 3}
@@ -9821,6 +9828,7 @@ MonoBehaviour:
   _dialogueStartNode: {fileID: 11400000, guid: f2fd3dbb4f0e1b749a044e4a61e206e0, type: 2}
   _ui: {fileID: 1997002959}
   interacttext: {fileID: 1556378289}
+  _currentNode: {fileID: 0}
   giftNode: {fileID: 11400000, guid: 2238bcf59b1d5b842a4645202bcb623c, type: 2}
   Teddy: {fileID: 11400000, guid: 70d132ccade574f43a1718eb1877d3b2, type: 2}
   DesactivateTeddy: {fileID: 140158187}

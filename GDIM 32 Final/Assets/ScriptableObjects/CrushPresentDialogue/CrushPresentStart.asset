@@ -20,5 +20,5 @@ MonoBehaviour:
   - Yup, it's my first time making a teddy bear.
   - Yeah, it took me several days to make.
   _npcReplies:
-  - {fileID: 11400000}
+  - {fileID: 11400000, guid: 3920da8fe1e2f9344a3c07efdfe3b9c8, type: 2}
   - {fileID: 11400000, guid: 3920da8fe1e2f9344a3c07efdfe3b9c8, type: 2}
