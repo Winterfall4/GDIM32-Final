@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f69f64e584aa00642bdd0f20626eb7d0, type: 3}
-  m_Name: Dog Rub_Belly
+  m_Name: CrushPresentEnd
   m_EditorClassIdentifier: 
   _lines:
-  - As you rub the dog's belly for a while, he starts to close his eyes slowly until
-    he falls asleep.
-  - It should be safe for me to get my gift now.
-  _playerReplyOptions:
-  - Get the gift back
-  _npcReplies:
-  - {fileID: 11400000, guid: 2238bcf59b1d5b842a4645202bcb623c, type: 2}
+  - 'Akito: Wow! You must have put in a lot of work into this. I really appreciate
+    the effort.'
+  - 'Haruka: You''re welcome. I''m so glad that you like it!'
+  - 'Akito: Of course! This is so nice!'
+  - 'Akito: Well I''ll see you around. Thank you again for the gift!'
+  _playerReplyOptions: []
+  _npcReplies: []

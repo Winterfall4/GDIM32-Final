@@ -15,7 +15,6 @@ MonoBehaviour:
   _lines:
   - The dog notices you reach for your gift and growls at you.
   - He doesn't seem too happy
-  _playerReplyOptions:
   - ' I should probably leave for now.'
-  _npcReplies:
-  - {fileID: 11400000, guid: f2fd3dbb4f0e1b749a044e4a61e206e0, type: 2}
+  _playerReplyOptions: []
+  _npcReplies: []

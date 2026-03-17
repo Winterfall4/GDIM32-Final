@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f69f64e584aa00642bdd0f20626eb7d0, type: 3}
+  m_Name: GoodEnding
+  m_EditorClassIdentifier: 
+  _lines:
+  - 'Akito: Oh wow, these flowers look amazing!'
+  - 'Haruka: I''m so glad you like them.'
+  - 'Akito: Of course. Red is my favorite color.'
+  - 'Haruka: Actually Akito, I got you those flowers to let you know that I actually
+    like you.'
+  - 'Akito: Wait what. Really?'
+  - 'Haruka: Yeah, I''ve liked you for quite some time now but only just now I had
+    the courage to tell you.'
+  - 'Akito: Wow...'
+  - 'Akito: I''ve actually been having a crush on you too for quite some time as
+    well.'
+  - 'Haruka: Oh my goodness!'
+  - 'Akito: Hahaha. Well this is something.'
+  - 'Haruka: Haha. It sure is.'
+  _playerReplyOptions: []
+  _npcReplies: []

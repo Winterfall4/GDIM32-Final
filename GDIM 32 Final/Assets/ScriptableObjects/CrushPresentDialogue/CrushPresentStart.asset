@@ -10,13 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f69f64e584aa00642bdd0f20626eb7d0, type: 3}
-  m_Name: Dog Rub_Belly
+  m_Name: CrushPresentStart
   m_EditorClassIdentifier: 
   _lines:
-  - As you rub the dog's belly for a while, he starts to close his eyes slowly until
-    he falls asleep.
-  - It should be safe for me to get my gift now.
+  - 'Haruka: Happy Birthday Akito! I hope you like this.'
+  - 'Akito: Oh wow! Thank you so much!'
+  - 'Akito: This is so nice. You made this yourself?'
   _playerReplyOptions:
-  - Get the gift back
+  - Yup, it's my first time making a teddy bear.
+  - Yeah, it took me several days to make.
   _npcReplies:
-  - {fileID: 11400000, guid: 2238bcf59b1d5b842a4645202bcb623c, type: 2}
+  - {fileID: 11400000}
+  - {fileID: 11400000, guid: 3920da8fe1e2f9344a3c07efdfe3b9c8, type: 2}

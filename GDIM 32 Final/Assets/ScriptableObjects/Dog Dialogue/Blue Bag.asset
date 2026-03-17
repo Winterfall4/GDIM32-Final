@@ -16,7 +16,6 @@ MonoBehaviour:
   - You grab a treat from the blue bag and the dog seems to not really like the smell.
   - The dog starts to growl at you.
   - 'It''s probably not safe for me to be here for now. '
-  _playerReplyOptions:
   - I should probably leave...
-  _npcReplies:
-  - {fileID: 11400000, guid: f2fd3dbb4f0e1b749a044e4a61e206e0, type: 2}
+  _playerReplyOptions: []
+  _npcReplies: []

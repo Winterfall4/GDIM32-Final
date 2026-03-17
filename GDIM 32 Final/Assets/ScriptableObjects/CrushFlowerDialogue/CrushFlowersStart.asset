@@ -10,13 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f69f64e584aa00642bdd0f20626eb7d0, type: 3}
-  m_Name: Dog Rub_Belly
+  m_Name: CrushFlowersStart
   m_EditorClassIdentifier: 
   _lines:
-  - As you rub the dog's belly for a while, he starts to close his eyes slowly until
-    he falls asleep.
-  - It should be safe for me to get my gift now.
+  - 'Haruka: Hey Akito. I actually wanted to give you something else as well today.'
+  - 'Akito: Oh really? What is it?'
   _playerReplyOptions:
-  - Get the gift back
+  - Red roses
+  - Blue flowers
+  - Purple flowers
   _npcReplies:
-  - {fileID: 11400000, guid: 2238bcf59b1d5b842a4645202bcb623c, type: 2}
+  - {fileID: 11400000, guid: e2a4c0d69214a374ea5d47c57c21c8ea, type: 2}
+  - {fileID: 11400000, guid: 07188a7a7e72ac54bbcd20d9065bb3b2, type: 2}
+  - {fileID: 11400000, guid: 07188a7a7e72ac54bbcd20d9065bb3b2, type: 2}
