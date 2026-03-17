@@ -5,9 +5,7 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     public AudioClip backgroundmusic;
-    public AudioSource track1;
-    public AudioSource track2;
-    public float fadeDuration = 1.0f;
+    private AudioSource track1, track2;
     public static AudioManager instance;
     private bool isTrack1Playing = true;
 
@@ -21,9 +19,9 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        track1 = GetComponent<AudioSource>();
-        track2 = GetComponent<AudioSource>();
-        isTrack1Playing=true;
+        track1 = gameObject.AddComponent<AudioSource>();
+        track2 = gameObject.AddComponent<AudioSource>();
+        isTrack1Playing =true;
         SwapTrack(backgroundmusic);
     }
 
