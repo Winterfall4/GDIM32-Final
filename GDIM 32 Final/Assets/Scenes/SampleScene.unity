@@ -8564,6 +8564,9 @@ MonoBehaviour:
   rightPresentNode: {fileID: 11400000, guid: 3920da8fe1e2f9344a3c07efdfe3b9c8, type: 2}
   rightFlowerNode: {fileID: 11400000, guid: e2a4c0d69214a374ea5d47c57c21c8ea, type: 2}
   Teddy: {fileID: 11400000, guid: 70d132ccade574f43a1718eb1877d3b2, type: 2}
+  RedBouquet: {fileID: 11400000, guid: c34875ace803482479ad459d56084a12, type: 2}
+  BlueBouquet: {fileID: 11400000, guid: 4d27554ddb61ef643b6fe5cbd5bef274, type: 2}
+  PurpleBouquet: {fileID: 11400000, guid: c7c4020003df3bc489c42ed5b389cdfc, type: 2}
   _currentMode: 0
 --- !u!4 &797537525 stripped
 Transform:

@@ -23,7 +23,6 @@ public class DialogueHandler : MonoBehaviour
         _playerMultiOptions.SetActive(false);
 
         _npcText.text = dialogue;
-        Debug.Log("dialogue is Showing");
     }
 
     public void ShowPlayerOptions()

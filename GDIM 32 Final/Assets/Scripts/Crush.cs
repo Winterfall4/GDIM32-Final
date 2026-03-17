@@ -16,8 +16,12 @@ public class Crush : Dialogue
     [SerializeField] private DialogueNode rightPresentNode;
     [SerializeField] private DialogueNode rightFlowerNode;
     [SerializeField] private Item Teddy;
+    [SerializeField] private Item RedBouquet;
+    [SerializeField] private Item BlueBouquet;
+    [SerializeField] private Item PurpleBouquet;
 
-    private bool playerInRange = false;
+
+    private bool gaveGift = false;
     public delegate void PlayerInteract();
     public static event PlayerInteract OnPlayerClick;
     public CrushState _currentMode;
@@ -36,8 +40,16 @@ public class Crush : Dialogue
         CrushCheck();
         if (InventoryManager.Instance.PlayerHasItem(Teddy)) 
         {
-            Debug.Log("TEDDY IN INVENTORY");
             _currentNode = presentNode;
+
+        }
+        if (InventoryManager.Instance.PlayerHasItem(RedBouquet) || InventoryManager.Instance.PlayerHasItem(PurpleBouquet) || InventoryManager.Instance.PlayerHasItem(BlueBouquet))
+        {
+            Debug.Log("BOUQUET IN INVENTORY");
+            if (gaveGift)
+            {
+                _currentNode = flowerNode;
+            }
 
         }
     }
@@ -70,9 +82,9 @@ public class Crush : Dialogue
 
         if (_currentNode == rightPresentNode)
         {
-            _currentNode = flowerNode;
             InventoryManager.Instance.Remove(Teddy);
             InventoryManager.Instance.ListItem();
+            gaveGift = true;
         }
 
         if (_currentLine < _currentNode._lines.Length)
