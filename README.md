@@ -78,11 +78,41 @@ Personally, I think the proposal, the breakdown, and the use of Trello are very 
 ## Final Submission
 ### Group Devlog
 
+Within the structure of our game we have used the following design patterns:
+
+#### State machine:
+
+Within our game, we have a finite state machine being used in our NPC class. Looking at our NPC script we have created an enum “NPCState” with two states that all NPCs possess: an isIdle state and an isTalking state. In the NPC classes CheckDistance Method they utilize these states by establishing that if the player's distance is close enough the NPC’s state will be set to “IsTalking” and will switch to “IsIdle” when the player is away from the trigger distance. Though the use of the state machine is very basic- the NPC class is a parent to the many child classes that rely on its CheckDistance method for their own unique behaviors. 
+
+Other than this, there is another NPC state machine being used within the NPC_parent class which is attached to the two moving NPCs in the game. This class has an enum with two states: “walking” and “interacting” The NPCs with this component use this state machine to understand what animation state they should be in. In general, the NPCs will be in their “walking state” constantly moving and set into a walking animation. The NPCs’ “interacting” state is set when the player gets within a distance, similar to the CheckDistance Method in the NPC class, once the interacting state is active the moving NPC will stop and look towards the player's gameObject. 
+
+The use of this state machine helped our game’s scaling as it prevented us from having to create and several if else statements running in our game. 
+
+#### Inheritance:
+
+An instance of inheritance is found in our game’s Crush and Dog Classes. These classes inherit from the NPC class and rely on the NPC class's CheckDistance () method to operate their own individual behaviors. Looking at both of these child classes: their update method consists of the parent class’ CheckDistance() method and their own unique methods (the Dog class having a DogCheck() method and the Crush having a CrushCheck() method. 
+
+For the DogCheck() and CrushCheck() methods to be able to run their logic the class’s update methods check to see what state is being detected in the CheckDistance() method. If the state is detected to be “IsTalking” the DogCheck() and CrushCheck() methods process that and in return they make the Dog and Crush gameObject in the game interactable with a text that appears next to the object indicating that these NPCs can press e to talk with these npcs and when the player presses e a unique UI shows up for both these NPCs. 
+
+The use of inheritance is very practical in this case so that we didn’t have to implement a distance checking logic in each intractable NPC and instead had it be a shared method that can be referenced in attaching classes. 
+
+
+
+#### Singleton:
+We used a Singleton for the creation of the main inventory. We used a singleton with the purpose that in the game there will only exist one inventory and to avoid the existence of other instances that could break the game.
+This system helped us a lot since it made it easier to connect the inventory between scripts and allowed them to have accessibility to modify the inventory by referencing it.
+One example of this is the connection between the script “Dog Dialogue”, where we were able to access the inventory easily by using Inventory. instance.Add(). In this way, we send a message to the inventory indicating when to add the plush toy and update the inventory UI easily in response to the interaction between the player and the dog.
+Another example is in the script “Pick Up”, where we use it to let the inventory know that an object was picked up and that this item should automatically be removed from the terrain.
+Basically, thanks to the Singleton the inventory UI updates easily every time an object is added or dropped.
+
+
 
 ### Team Member Name 1
 Put your individual final Devlog here.
-### Team Member Name 2
-Put your individual final Devlog here.
+### Team Member Kai Castilliano
+
+Since the Check in, one of the first things I did was get the Dialogue ScriptableObjects made for the Dog and the 2 friend NPCs in the game- Though I was not the team member to have written the actual dialogue, by having these scriptable objects made it allowed us to both work on the dialogue mechanics in our game while also making it convenient for the team member who did write the dialogue to find where to copy and paste their work in. Originally, I was trying to navigate my way through the dog’s dialogue to see what I can do with that by referencing the dialogue learning slides in class: I had made a dialogue node script, a dog dialogue test script though I found myself having trouble doing this process solo which is why I had assistance from a team member to problem solve our way through getting the dialogue working. Other than this- my team realized that we needed two audio tracks so I decided to take on this task. I had downloaded another music track and coded logic in the AudioManager and the AudioSwap scripts within our game. The Audio Manager is attached to an audio controller gameObject in the game and the Audio Swap component is connected to an invisible cube surrounding the garden environment of the game. In the AudioSwap script it contains an ontriggerenter and ontriggerexit method that establishes that if the player steps inside the collider of the invisible cube, a new audio track will play. The AudioManager script contains an instance and awake method to prevent the game from playing both audio tracks at the same time and sets it so that the original background will continue to play unless it gets triggered within the AudioSwap Class. 
+
 ### Team Member Alejandra Perez
 
 Since the check-in, the tasks I worked on for the final project were the following:
@@ -128,9 +158,9 @@ Personally, the biggest changes I made for the final project were the ones menti
     -  [Trees]( https://assetstore.unity.com/packages/3d/vegetation/trees/low-poly-trees-pack-lite-free-stylized-nature-environment-assets-295464)
     - [Terrain texture]( https://assetstore.unity.com/packages/2d/textures-materials/nature/terrain-textures-free-271990)
     - [Park](https://assetstore.unity.com/packages/3d/environments/urban/low-poly-park-pack-created-with-fastmesh-asset-292938)
-    - [Pavilion] (https://assetstore.unity.com/packages/3d/props/exterior/pavilion-85680)
+    - [Pavilion](https://assetstore.unity.com/packages/3d/props/exterior/pavilion-85680)
     - [Teddy Bear](https://assetstore.unity.com/packages/3d/props/interior/pandazole-home-interior-low-poly-pack-203033)
 
 - Music:
-    [ Background Music](https://freemusicarchive.org/music/lowtone-music/just-love-lofi-chill-beat/just-love-1-minute-version-lofi-chill/)
- 
+- [Background Music](https://freemusicarchive.org/music/lowtone-music/just-love-lofi-chill-beat/just-love-1-minute-version-lofi-chill/)
+- [Background Music 2](https://freemusicarchive.org/music/Ondrosik/no-words/peaceful-3/)
