@@ -83,8 +83,38 @@ Personally, I think the proposal, the breakdown, and the use of Trello are very 
 Put your individual final Devlog here.
 ### Team Member Name 2
 Put your individual final Devlog here.
-### Team Member Name 3
-Put your individual final Devlog here.
+### Team Member Alejandra Perez
+
+Since the check-in, the tasks I worked on for the final project were the following:
+
+#### Create a new NPC area
+
+Our team planned to have an area where, in this case, a dog that the player can interact with would be located. Because of this, my task was to create that area. This was one of the easiest and fastest tasks to complete. I placed trees, tables, and a small pavilion. I also added colliders, the dog, and a teddy bear object in the dog’s mouth.
+
+#### Friend NPC walk around
+
+This was one of the most difficult tasks I worked on for the project. From my experience, most of it was based on a demo that was shown in class, specifically the demo of the week 7. In this demo there is an example of a duck walking around the terrain, but when it sees the NPC it tries to attack the player while it looks at them.
+
+For our game we needed something similar, but without the NPC chasing the player. I used methods from the demo. First, I used a state machine to indicate when specific animations needed to play and how the NPC should react. These only had two states: “Walking” and “Interacting”.
+
+Other methods I used from the demo were UpdateState(), RunWalkingState(), RunState(), and NewWalkDirection(), among others. These helped the NPC generate a random direction inside a specific area every certain amount of time, and also made the NPC stop walking when it detected the player at a specific distance so the friends NPC would only see the player. It was difficult, but I felt grateful to have an example that I could use for support and refer to when I was confused.
+
+I also had to deal with keeping the Friend NPC inside a specific area. This was the most frustrating part of this task. At first I tried creating an invisible wall where the player could pass but the NPC could not, but for some reason they still kept leaving the area. Because of this I remembered that I could use NavMesh, so I tried creating one only for a specific area, but it still did not work.
+
+Because of this I asked my teammates for help. They were also confused and did not know the reason for the problem. During one class my teammate Geanine went with me to talk to an LA, and after a long time trying to help me he realized that there was a NavMesh covering the entire terrain, which is why the NPC could leave the area. We had no idea where it came from, so we had to move our whole map to the side of this big square NavMesh.
+
+My teammate Genine searched for where it came from and found that The big Navmesh was created when the scene was first created. Thanks to the help we received in class and Genine’s help, my script was finally able to work successfully.
+
+#### Make 3 flowers into a bouquet and when dropped drop 3 flowers
+
+For this task I added a method called FlowBouquet(). This method keeps track of the flowers by color/name. When the count reaches exactly three, those flowers are automatically removed and the bouquet prefab is added instead.
+
+To make it so that when the bouquet is dropped it drops three flowers, I used a vector for spacing and a loop to repeat the Instantiate. Doing this was a new and interesting way for me to use a loop.
+I also created scriptable objects for the bouquets and modified the scriptable items so the game could identify which items were bouquets and which were not. This prevents objects from appearing three times when they are dropped.
+
+#### Other small changes/contributions
+
+Personally, the biggest changes I made for the final project were the ones mentioned above. However, I also made some smaller contributions, such as connecting the dog dialogue with the inventory and updating the inventory UI, fixing the bug with the message when the inventory is full, fixing the Friend NPC animations, and making the teddy bear disappear from the dog’s mouth when the player receives it. These were simpler and less stressful tasks.
 
 ## Open-Source Assets
 
